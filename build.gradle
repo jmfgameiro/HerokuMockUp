@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+apply plugin: 'wrapper'
+
+
+sourceCompatibility = 1.8
+
+
+mainClassName = "pt.jmfgameiro.heroku.helloworld.HerokuApplication"
+
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile group: 'io.dropwizard', name: 'dropwizard-core', 	version: '0.8.1'
+	compile group: 'io.dropwizard', name: 'dropwizard-assets', 	version: '0.8.1'
+}
+
+
+task stage( dependsOn: [ clean, installApp ] )
+
+installApp {
+	destinationDir = file( 'build/install' )
+}
+
