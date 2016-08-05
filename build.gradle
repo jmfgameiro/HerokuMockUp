@@ -7,7 +7,7 @@ apply plugin: 'wrapper'
 sourceCompatibility = 1.8
 
 
-mainClassName = "pt.jmfgameiro.heroku.helloworld.HerokuApplication"
+mainClassName = "pt.jmfgameiro.heroku.mockup.HerokuApplication"
 
 
 repositories {

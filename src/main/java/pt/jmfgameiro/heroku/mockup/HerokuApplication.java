@@ -1,4 +1,4 @@
-package pt.jmfgameiro.heroku.helloworld;
+package pt.jmfgameiro.heroku.mockup;
 
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
@@ -12,7 +12,7 @@ public class HerokuApplication extends Application< Configuration > {
 	public static void main( String[] args ) throws Exception {
 		String[] myArgs = new String[ 2 ];
 		myArgs[ 0 ] = "server";
-		myArgs[ 1 ] = "helloworld.yml";
+		myArgs[ 1 ] = "mockup.yml";
 		new HerokuApplication().run( myArgs );
 	}
 	
