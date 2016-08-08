@@ -1,13 +1,5 @@
 var samples = [ "helloworld" ];
 
-$(window).load(function(){
-
-    $('.row > a').each(function() {
-        $(this).att('height', $(this).width() + 'px');
-    });
-
-});
-
 $(document).ready(function(){
 
     // CREATE SAMPLES
@@ -26,4 +18,15 @@ $(document).ready(function(){
     });
 
 });
+
+$(window).load(function(){
+
+    $('.row > a').each(function() {
+        $(this).attr('height', $(this).width() + 'px');
+    });
+
+});
+
+
+
 
