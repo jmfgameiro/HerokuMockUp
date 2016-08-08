@@ -1,6 +1,15 @@
 var samples = [ "helloworld" ];
 
 $(window).load(function(){
+
+    $('.row > a').each(function() {
+        $(this).att('height', $(this).width() + 'px');
+    });
+
+});
+
+$(document).ready(function(){
+
     // CREATE SAMPLES
     var samplesDiv = $('#samplesDiv');
     $.each( samples, function(index, value){
@@ -14,14 +23,6 @@ $(window).load(function(){
         sampleLink.appendChild(sampleImg);
         sampleDiv.appendChild(sampleLink);
         samplesDiv.append(sampleDiv);
-    });
-
-});
-
-$(document).ready(function(){
-
-    $('.row > a').each(function() {
-        $(this).att('height', $(this).width() + 'px');
     });
 
 });
