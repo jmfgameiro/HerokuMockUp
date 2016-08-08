@@ -20,7 +20,7 @@ $(document).ready(function(){
 $(window).load(function(){
 
     $('.row > a').each(function() {
-        $(this).css('height', $(this).width() + 'px');
+        $(this).height($(this).width());
     });
 
 });
