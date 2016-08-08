@@ -22,7 +22,7 @@ $(document).ready(function(){
 $(window).load(function(){
 
     $('.row > a').each(function() {
-        $(this).attr('height', $(this).width() + 'px');
+        $(this).css('height', $(this).width() + 'px');
     });
 
 });
