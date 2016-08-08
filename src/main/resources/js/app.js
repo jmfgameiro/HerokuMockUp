@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 $(window).load(function(){
 
-    $('.row > a').each(function() {
+    $('#samplesDiv > a').each(function() {
         $(this).height($(this).width());
     });
 
