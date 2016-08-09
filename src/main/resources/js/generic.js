@@ -1,7 +1,7 @@
 //$("#footerYear").text(new Date().getFullYear());
 
 $(function() {
-    $("#navbarIncluded").load("/html/navbar.html");
+    $("#navbarIncluded").load("/navbar.html");
 });
 
 $(document).ready(function(){
