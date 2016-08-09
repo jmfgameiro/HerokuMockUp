@@ -5,7 +5,7 @@ $(function () {
 });
 
 function takeSnapshot() {
-    html2canvas(document.body, {
+    html2canvas($("body"), {
         onrendered: function (canvas) {
             return Canvas2Image.saveAsPNG(canvas);
         }
