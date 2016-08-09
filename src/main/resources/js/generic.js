@@ -4,7 +4,7 @@ $(function () {
     $("#navbarIncluded").load("/navbar.html");
 });
 
-$("#navbarSnapshot").on( "click", function () {
+$("#navbarSnapshot").on( "click", "submit", function () {
     alert("Button Click");
     html2canvas($('body'), {
         onrendered: function (canvas) {
