@@ -22,6 +22,7 @@ $(window).load(function(){
 
     $("#samplesDiv > a").each(function() {
         $(this).height($(this).width());
+        $(this).find("img").height($(this).width() - 2);
     });
 
 });

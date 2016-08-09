@@ -20,7 +20,7 @@ public class HerokuApplication extends Application< Configuration > {
 	@Override
 	public void initialize( Bootstrap< Configuration > bootstrap ) {
 		bootstrap.addBundle( new AssetsBundle( "/css", "/css", null, "css" ) );
-		bootstrap.addBundle( new AssetsBundle( "/images", "/image", null, "images" ) );
+		bootstrap.addBundle( new AssetsBundle( "/images", "/images", null, "images" ) );
 		bootstrap.addBundle( new AssetsBundle( "/js", "/js", null, "js" ) );
 		bootstrap.addBundle( new AssetsBundle( "/html", "/", "index.html", "html" ) );
 		bootstrap.addBundle( new AssetsBundle( "/images/favicon.ico", "/favicon.ico", null, "favicon" ) );
