@@ -11,6 +11,7 @@ $(document).ready(function(){
         sampleLink.setAttribute("class","col-xs-12 col-md-4 mockup-container");
         var sampleImg = document.createElement("img");
         sampleImg.setAttribute("id","sample"+value);
+        sampleImg.setAttribute("src","/images/"+value+".jpg");
         sampleLink.appendChild(sampleImg);
         samplesDiv.append(sampleLink);
     });
