@@ -7,8 +7,7 @@ $(function () {
 function takeSnapshot() {
     html2canvas($('body'), {
         onrendered: function (canvas) {
-            var myImage = canvas.toDataURL("image/png");
-            window.open(myImage);
+            return Canvas2Image.saveAsPNG(canvas);
         }
     });
     return false;
