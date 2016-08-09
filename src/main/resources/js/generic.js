@@ -1,16 +1,15 @@
 //$("#footerYear").text(new Date().getFullYear());
 
-$(function() {
+$(function () {
     $("#navbarIncluded").load("/navbar.html");
 });
 
-$("#navbarSnapshot").click(function(){
+$("#navbarSnapshot").click(function () {
     alert("Button Click");
     html2canvas(document.body, {
-        onrendered: function(canvas) {
+        onrendered: function (canvas) {
             var myImage = canvas.toDataURL("image/png");
             window.open(myImage);
         }
     });
 });
-
