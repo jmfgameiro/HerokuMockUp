@@ -4,9 +4,9 @@ $(function () {
     $("#navbarIncluded").load("/navbar.html");
 });
 
-$("#navbarSnapshot").click(function () {
+$("#navbarSnapshot").on( "click", function () {
     alert("Button Click");
-    html2canvas(document.body, {
+    html2canvas($('body'), {
         onrendered: function (canvas) {
             var myImage = canvas.toDataURL("image/png");
             window.open(myImage);
